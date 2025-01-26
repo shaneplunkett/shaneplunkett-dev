@@ -2,24 +2,16 @@
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Head from "../components/Head.astro";
-import "../styles/global.css";
-
-const pageTitle = "Blog";
+import Title from "../components/Title.astro";
 ---
 
 <html lang="en">
     <head>
-        <title>{pageTitle}</title>
         <Head />
     </head>
-    <body>
+    <body class="mocha bg-base">
+        <Title />
         <Navigation />
-        <h1>My Blog</h1>
-        <h2>... and my new Astro site!</h2>
-        <p>This is where I will post about my journey using Astro.</p>
-        <ul>
-            <li><a href="/posts/first-post">Post 1</a></li>
-        </ul>
         <Footer />
     </body>
 </html>
